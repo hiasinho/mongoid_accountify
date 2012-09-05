@@ -28,7 +28,7 @@ MongoidAccountify adds a relation to models to a Account model and sets it on mo
  p = Person.new
 
  # Account instance
- p.creator
+ p.account
  # => <Account _id: 50470dce6f51b7c68e000009>
  ```
 
