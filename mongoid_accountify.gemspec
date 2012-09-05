@@ -12,13 +12,13 @@ Gem::Specification.new do |s|
   s.date = "2012-09-05"
   s.email = "hiasinho@me.com"
   s.extra_rdoc_files = [
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     "Gemfile",
     "Gemfile.lock",
     "MIT-LICENSE",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "lib/mongoid/accountify.rb",
     "lib/mongoid/accountify/account.rb",
@@ -40,13 +40,16 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<mongoid>, ["~> 3.0.4"])
+      s.add_development_dependency(%q<redcarpet>, ["~> 2.1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
     else
       s.add_dependency(%q<mongoid>, ["~> 3.0.4"])
+      s.add_dependency(%q<redcarpet>, ["~> 2.1.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
     end
   else
     s.add_dependency(%q<mongoid>, ["~> 3.0.4"])
+    s.add_dependency(%q<redcarpet>, ["~> 2.1.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
   end
 end
